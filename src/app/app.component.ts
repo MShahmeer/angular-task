@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-task';
+  childData:any
+  getData(val:any){
+    this.childData = val
+  }
 }

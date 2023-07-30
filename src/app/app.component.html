@@ -1,10 +1,14 @@
 <div style="text-align: center">
-  <h1>
+  <!-- <h1>
     Binding Parent Component Data using input property by passing value using
     template variable and creating an event to refresh the DOM
   </h1>
 
   Parent Component: <input type="text" #parentComponent (keyup)="(0)" />
 
-  <app-child [parentData]="parentComponent.value"></app-child>
+  <app-child [parentData]="parentComponent.value"></app-child> -->
+
+  <h1>Implementing Child to Parent, I am parent here</h1>
+  Data from child: {{childData}}
+  <app-child (childEvent)="getData($event)"></app-child> <!-- bind that output as event here using () -->
 </div>

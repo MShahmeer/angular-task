@@ -1,6 +1,13 @@
-<h1>
+<!-- <h1>
   Now I have parent data on the child component now I can bind that using
   interpolation
+</h1> -->
+<!-- <p>Data from parent: {{ parentData }}</p> -->
+
+<h1>
+  Child here, but I don't have parent reference so I will call method on keyup
+  with value, to pass that value to parent we will use Event Emitter Interface
 </h1>
 
-<p>Data from parent: {{ parentData }}</p>
+Child input:
+<input type="text" #childComponent (keyup)="onChange(childComponent.value)" />
